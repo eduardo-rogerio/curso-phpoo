@@ -1,0 +1,15 @@
+{
+    "name": "mixd2/curso-phpoo",
+    "autoload": {
+        "psr-4": {
+            "Mixd2\\CursoPhpoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Rogerio",
+            "email": "eduardo.rogerio@fmd.ag"
+        }
+    ],
+    "require": {}
+}
