@@ -2,8 +2,15 @@
 
 require '../vendor/autoload.php';
 
-use app\classes\Login; 
+$pessoa = new stdClass;
+$pessoa->nome = 'Eduardo';
+$pessoa->idade = 57;
 
-$login = new Login; 
-$login->email = 'eduardo@email.com'; 
-$login->password = 'e4u2dfd7'; echo $login->auth();
+var_dump($pessoa); 
+
+$usuario = ['nome' => 'Eduardo', 'idade' => 34];
+
+echo '<br>';
+echo '<br>';
+
+var_dump((object)$usuario);
