@@ -2,7 +2,8 @@
     "name": "mixd2/curso-phpoo",
     "autoload": {
         "psr-4": {
-            "Mixd2\\CursoPhpoo\\": "src/"
+            "Mixd2\\CursoPhpoo\\": "src/",
+           "app\\": "app/"
         }
     },
     "authors": [

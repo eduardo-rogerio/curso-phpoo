@@ -1,8 +1,9 @@
 <?php
 
-require '../app/classes/Login.php';
+require '../vendor/autoload.php';
 
-$login = new Login;
-$login->email = 'eduardo@email.com';
-$login->password = '1234567';
-echo $login->auth();
+use app\classes\Login; 
+
+$login = new Login; 
+$login->email = 'eduardo@email.com'; 
+$login->password = 'e4u2dfd7'; echo $login->auth();
