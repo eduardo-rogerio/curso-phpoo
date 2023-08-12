@@ -2,7 +2,9 @@
 
 require '../vendor/autoload.php';
 
-use app\classes\Crud;
+use app\classes\Login;
 
-$crud = new Crud;
-var_dump($crud->read());
+$login = new Login;
+
+$resul = $login->auth('eduardo@email.com',123234);
+var_dump($login);

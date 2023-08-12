@@ -3,11 +3,17 @@ namespace app\classes;
 
 Class Login
 {
-  public $email;
-  public $password;
+  // public $email;
+  // public $password;
+  public string $senha;
 
-  public function auth()
+  public string $name;
+
+  public function auth(string $email, int $password)
   {
-    return 'O meu email é '. $this->email . ' e minha senha é ' . $this->password; 
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $this->senha = $hash;
+    $this->name = 'eduardo';
+    return 'O meu email é '. $email . ' e minha senha é ' . $hash; 
   }
 }
